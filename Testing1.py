@@ -82,7 +82,7 @@ x = Decimal("0.1")
 y = Decimal("0.2")
 resultat = x + y
 print (resultat)
-'''
+
 
 x = "2"
 y = "5"
@@ -92,3 +92,18 @@ print (f"Summan är: {summa}")
 x = 42
 text = "Talet är: " + str (x)
 print (text)
+'''
+
+text = "Data Science"
+print (text[0])
+print (text[-1])
+print (text[4])
+
+text = " Python är roligt! "
+print (text.strip())
+print (text.replace("roligt", "fantastiskt"))
+print (text.upper())
+
+namn = "Johan"
+ålder = 30
+print (f"Hej, {namn}! Du är {ålder} år gammal.")
