@@ -120,4 +120,3 @@ print(x > 5 and x < 15)
 
 x = 10
 print( not(x > 5))
-jfbadjbcj
