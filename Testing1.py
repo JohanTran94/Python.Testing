@@ -93,3 +93,4 @@ x = 42
 text = "Talet är: " + str (x)
 print (text)
 
+dsa
