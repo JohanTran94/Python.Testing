@@ -92,7 +92,6 @@ print (f"Summan är: {summa}")
 x = 42
 text = "Talet är: " + str (x)
 print (text)
-'''
 
 text = "Data Science"
 print (text[0])
@@ -107,3 +106,18 @@ print (text.upper())
 namn = "Johan"
 ålder = 30
 print (f"Hej, {namn}! Du är {ålder} år gammal.")
+'''
+x = True
+y = False
+print(type(x))
+
+x = 10
+if x > 5:
+    print("x är större än 5")
+
+x = 10
+print(x > 5 and x < 15) 
+
+x = 10
+print( not(x > 5))
+jfbadjbcj
