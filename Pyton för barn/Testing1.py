@@ -175,7 +175,7 @@ lagra och summera heltal:
 utmaning:
 skapa en lista med namn och sök efter ett namn med en for-loop.
 uppdatera alla städer till stor begynnelsebokstav
-'''
+
 
 # 1. Skapa en lista med 5 städer
 städer = ["Stockholm", "Göteborg", "Malmö", "Uppsala", "Västerås"]
@@ -209,3 +209,105 @@ else:
 # Uppdatera alla städer till stor begynnelsebokstav
 städer = [stad.capitalize() for stad in städer]
 print(städer)
+
+reallyLongList = ["äpple", "banan", "körsbär", "druva", "apelsin", "päron", "kiwi", "mango", "passionsfrukt", "ananas"]
+
+print("Length: ")
+print(len(reallyLongList))
+
+x = 1
+for i, fruit in enumerate(reallyLongList):
+    if i == (i+1):
+        continue
+    if (i+1) % 3 == 0:
+        print(fruit)
+    # x += 1
+    x = x + 1
+    # Funkar inte
+    # x++
+
+print(type(x))
+print("x är:")
+print(x)
+
+def beräkna_lön_efter_skatt(bruttolön, skattesats):
+    """
+    Beräknar nettolön (lön efter skatt).
+
+    Parametrar:
+    - bruttolön (float): Lön före skatt.
+    - skattesats (float): Skattesatsen i procent (t.ex. 30 för 30%).
+
+    Returnerar:
+    - float: Nettolön (lön efter skatt).
+    """
+    if skattesats < 0 or skattesats > 100:
+        raise ValueError("Skattesatsen måste vara mellan 0 och 100.")
+    if bruttolön < 0:
+        raise ValueError("Bruttolön kan inte vara negativ.")
+    
+    skatt = bruttolön * (skattesats / 100)
+    nettolön = bruttolön - skatt
+    return nettolön
+
+print(beräkna_lön_efter_skatt(35000,30))
+
+
+age = int(input("Ange din ålder: "))
+if age < 18:
+ print("Du är inte gammal nog för att titta på filmen!")
+
+if age >=18:
+ print ("Enjoy your single time!")
+
+ 
+def beräkna_lön_efter_skatt(bruttolön, skattesats):
+    """
+    Beräknar nettolön.
+
+    Parametrar:
+    - bruttolön (float): Lön före skatt.
+    - skattesats (float): Skattesatsen i procent
+
+    Returnerar:
+    - float: Nettolön.
+    """
+    if skattesats < 0 or skattesats > 100:
+        raise ValueError("Skattesatsen måste vara mellan 0 och 100.")
+    if bruttolön < 0:
+        raise ValueError("Bruttolön kan inte vara negativ.")
+    
+    skatt = bruttolön * (skattesats / 100)
+    nettolön = bruttolön - skatt
+    return nettolön
+
+print (beräkna_lön_efter_skatt(35000,-1))
+
+produkt = {"namn": "Laptop", "pris": 10000, "lager": 50}
+
+# 1. Skriv ut produktens pris.
+print ("Produktens pris är: ", produkt ["pris"])
+# 2. Lägg till en nyckel för "kategori".
+produkt ["kategori"] = "Datorer"
+# 3. Ändra värdet på "lager" till 40.
+produkt ["lager"] = 40
+
+print (produkt)
+
+# Skapa en dictionary med tre nyckel-värde-par (e.g.,"namn", "ålder", "stad").
+Person1 ={"namn": "Johan", "age": 30, "stad": "Stockholm"}
+# Iterera genom dictionary och
+# skriv ut varje nyckel och värde.
+for nyckel, värde in Person1.items():
+    print(f'Personens {nyckel}: {värde}')
+# Ex:person = {"name": "Anna", "age": 25, "city": "Stockholm"}
+# ... fortsätt här
+
+x = int(input("Skriv ett tal: "))
+if x > 0:
+ print ("Taler är positivt")
+elif x < 0:
+ print ("Talet är negativt")
+else:
+ print ("Talet är noll")
+ '''
