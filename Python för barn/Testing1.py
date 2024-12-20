@@ -310,4 +310,17 @@ elif x < 0:
  print ("Talet är negativt")
 else:
  print ("Talet är noll")
- '''
+ 
+password = ""
+while password == "abc":
+    password = input("Ange password: ")
+    if password == "abc":
+        print("Fel password! Försök igen!")
+print("Inloggad")
+'''
+password = ""
+while password != "abc":
+    password = input("Ange password: ")
+    if password != "abc":
+        print("Fel password! Försök igen!")
+print("Inloggad")
