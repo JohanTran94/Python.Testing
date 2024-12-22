@@ -24,6 +24,6 @@ print (beräkna_lön_efter_skatt(18000,15))
 age = int(input("Ange din ålder: "))
 if age < 18:
  print("Du är inte gammal nog för att titta på filmen!")
-
 if age >=18:
  print ("Enjoy your single time!!!")
+

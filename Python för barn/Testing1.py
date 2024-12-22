@@ -317,10 +317,18 @@ while password == "abc":
     if password == "abc":
         print("Fel password! Försök igen!")
 print("Inloggad")
-'''
+
 password = ""
 while password != "abc":
     password = input("Ange password: ")
     if password != "abc":
         print("Fel password! Försök igen!")
 print("Inloggad")
+'''
+Fråga = ""
+while Fråga != "framtiden":
+    print("Vad är något som alltid är framför dig, men som du aldrig kan nå?")
+    Fråga = input("Ange svar: ")
+    if Fråga != "framtiden":
+        print("Fel svar pucko, försök igen!")
+print("Rätt svar! Bra jobbat!")
