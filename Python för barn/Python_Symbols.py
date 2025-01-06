@@ -121,3 +121,11 @@
 # Less than or equal to (<=) - Mindre än eller lika med
 # <= - Checks if the left value is less than or equal to the right value
 #      Kontrollerar om det vänstra värdet är mindre än eller lika med det högra
+
+# Floor division (//) - Golvdivision / Heltalsdivision
+# // - Divides two numbers and returns the integer part of the quotient
+#      Dividerar två tal och returnerar heltalsdelen av kvoten
+
+# Exponentiation (**) - Upphöjt till
+# ** - Raises the left number to the power of the right number
+#      Upphöjer det vänstra talet till det högra talets potens

@@ -324,7 +324,7 @@ while password != "abc":
     if password != "abc":
         print("Fel password! Försök igen!")
 print("Inloggad")
-'''
+
 Fråga = ""
 while Fråga != "framtiden":
     print("Vad är något som alltid är framför dig, men som du aldrig kan nå?")
@@ -332,3 +332,21 @@ while Fråga != "framtiden":
     if Fråga != "framtiden":
         print("Fel svar pucko, försök igen!")
 print("Rätt svar! Bra jobbat!")
+'''
+myfamily = {
+   "child1" : {
+     "name" : "Emil",
+#     "year" : 2004,
+#     "hobbies": ["Programming", "Football", "Gaming"]
+#   },
+#   "child2" : {
+#     "name" : "Tobias",
+#     "year" : 2007
+#   },
+#   "child3" : {
+#     "name" : "Linus",
+#     "year" : 2011
+#   }
+# }
+
+# print( len(myfamily) )
