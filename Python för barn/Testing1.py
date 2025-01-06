@@ -332,7 +332,7 @@ while Fråga != "framtiden":
     if Fråga != "framtiden":
         print("Fel svar pucko, försök igen!")
 print("Rätt svar! Bra jobbat!")
-'''
+
 myfamily = {
    "child1" : {
      "name" : "Emil",
@@ -350,3 +350,8 @@ myfamily = {
 # }
 
 # print( len(myfamily) )
+'''
+my_list = ["äpple", "banan", "körsbär"]
+for fruit in my_list:
+   print(fruit)
+   print (type(fruit))

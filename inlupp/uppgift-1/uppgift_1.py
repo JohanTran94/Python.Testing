@@ -4,8 +4,13 @@
 # Exempel: def is_odd(x: int) -> bool:
 # Förklaring: Funktionens namn är is_odd och tar en parameter x av datatypen int. Funktionen returnerar en bool.
 
-def funktions_namn(variabel_namn: datatyp) -> returtyp:
+def is_odd(x: int) -> bool:
     """
-    Skriv beskrivning här.
+    is_odd är en funktion som returerar True om x är udda och False om x är jämnt.
     """
-    pass # Ta bort denna rad och skriv din kod här
+    if x % 2 != 0:
+        return True
+    else:
+        return False
+    
+print(is_odd(11))
