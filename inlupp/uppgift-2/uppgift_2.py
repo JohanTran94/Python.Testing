@@ -3,7 +3,7 @@
 
 def sum_list(numbers: list[int]) -> int:
     """
-    Skriv beskrivning här.
+    Returnerar summan av alla siffror i listan.
     """
     total = 0
     for number in numbers:
