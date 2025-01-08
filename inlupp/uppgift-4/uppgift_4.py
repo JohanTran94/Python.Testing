@@ -11,8 +11,8 @@ def fibonacci(n: int) -> list[int]:
         return [0]
     
     fib_sequence = [0, 1]
-    for x in range(2, n):
-        next_fib = fib_sequence[x - 1] + fib_sequence[x - 2]
+    for i in range(2, n):
+        next_fib = fib_sequence[i - 1] + fib_sequence[i - 2]
         fib_sequence.append(next_fib)
     return fib_sequence
 print(fibonacci(10))
