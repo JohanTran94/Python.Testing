@@ -3,7 +3,7 @@
 
 def multiplication_table(n : int, limit :int) -> list[int]:
     """
-    Skriv beskrivning här.
+    Returnerar multiplikationstabellen för n upp till limit i en lista.
     """
     return [n*i for i in range (1, limit + 1)]
 

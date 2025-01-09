@@ -3,7 +3,7 @@
 
 def validate_password(password: str) -> bool:
     """
-    Skriv beskrivning här.
+    Kontrollerar att lösenordet är minst 8 tecken långt och innehåller minst en siffra.
     """
     if len(password) >= 8 and any(char.isdigit() for char in password):
         return True
