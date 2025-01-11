@@ -3,7 +3,7 @@
 
 def celsius_to_fahrenheit(celsius: float) -> float:
     """
-    Skriv beskrivning här.
+    Konverterar en temperatur från Celsius till Fahrenheit.
     """
     return celsius * 9/5 + 32
 

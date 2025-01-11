@@ -3,7 +3,7 @@
 
 def is_palindrome(string: str) -> bool:
     """
-    Skriv beskrivning här.
+    Kontrollerar om en given sträng är ett palindrom (dvs. samma framifrån och bakifrån).
     """
     clean_string = string.replace(" ", "").lower()
     return clean_string == clean_string[::-1]
