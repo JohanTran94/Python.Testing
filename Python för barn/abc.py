@@ -1,22 +1,68 @@
+'''
+import csv
+
+data_testing_1 = [
+    ["Product", "Price", "Stock"],
+    ["Apples", 5, 100],
+    ["Bananas", 3, 150],
+    ["Oranges", 4, 200]
+]
+
+with open("products.csv", "w", newline="") as file:
+    my_writer = csv.writer(file)
+    my_writer.writerows(data_testing_1)
+
+with open("products.csv", "r") as file:
+    my_reader = csv.reader(file)
+    for row in my_reader:
+        print(row)
+
+        
+
+import csv
+
+data_testing_2 = [
+    {"Product": "Apples", "Price": 5, "Stock": 100},
+    {"Product": "Bananas", "Price": 3, "Stock": 150},
+    {"Product": "Oranges", "Price": 4, "Stock": 200}
+]
+
+with open ("dict_products.csv", "w", newline="") as file:
+    my_writer = csv.DictWriter(file, fieldnames=["Product", "Price", "Stock"])
+    my_writer.writeheader()
+    my_writer.writerows(data_testing_2)
+
+with open ("dict_products.csv", "r") as file:
+    my_reader = csv.DictReader(file)
+    for row in my_reader:
+        print(row)
+
+        
+
+
+
 import matplotlib.pyplot as plt
-import numpy as np
-import math
 
-plt.rcParams["figure.figsize"] = [12,8]
+# Dữ liệu mẫu
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
 
-x_vals = np.linspace(0, 20, 20)
-y_vals = [math.sqrt(i) for i in x_vals]
+# Vẽ biểu đồ đường
+plt.plot(x, y, marker="o")
+plt.title("Exempel på linjediagram")
+plt.xlabel("X-axeln")
+plt.ylabel("Y-axeln")
+plt.grid(True)
+plt.show()
+'''
 
-plt.subplot(2,2,1)
-plt.plot(x_vals, y_vals, 'bo-')
+import seaborn as sns
+import matplotlib.pyplot as plt
 
-plt.subplot(2,2,2)
-plt.plot(x_vals, y_vals, 'rx-')
+# Dữ liệu mẫu
+data = [12, 15, 17, 14, 19, 24, 29, 30, 32, 35]
 
-plt.subplot(2,2,3)
-plt.plot(x_vals, y_vals, 'g*-')
-
-plt.subplot(2,2,4)
-plt.plot(x_vals, y_vals, 'g*-')
-
+# Biểu đồ phân phối dữ liệu
+sns.histplot(data, bins=5, kde=True)
+plt.title("Exempel på histogram")
 plt.show()
