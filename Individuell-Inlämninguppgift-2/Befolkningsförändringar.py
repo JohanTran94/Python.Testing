@@ -1,7 +1,7 @@
 import pandas as pd
 
 #Öppnar och läser in csv filen med pandas. Obs! Data är åtskilda med ";" istället för ",".
-df = pd.read_csv(r"C:\Users\johan\Documents\newproject\befolkningsfoeraendringar-helar.csv", sep=";")
+df = pd.read_csv(r"C:\Users\johan\Documents\newproject\Individuell-Inlämninguppgift-2\befolkningsfoeraendringar-helar(original).csv", sep=";")
 print(df.head(10))
 
 #Controllerar om det finns "null" data i filen.
@@ -25,7 +25,7 @@ grouped_df = df_filtered.groupby("år").agg({
 print(grouped_df)
 
 #Skapar en sökväg till platsen där filen ska sparas. Och exporterar filen med .to_excel().
-processed_file_path = r"C:\Users\johan\Desktop\Johan\DM-TUC-24\Data Science\Inlämninguppgift 2\processed_data_befolkningsförändringar.xlsx"
+processed_file_path = r"C:\Users\johan\Documents\newproject\Individuell-Inlämninguppgift-2\processed_data_befolkningsförändringar.xlsx"
 df_filtered.to_excel(processed_file_path, index=False)
 print(f"Data have been saved at: {processed_file_path}")
 
@@ -33,7 +33,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 #Läser in data från den nyligen exporterade excel filen.
-df_filtered = pd.read_excel(r"C:\Users\johan\Desktop\Johan\DM-TUC-24\Data Science\Inlämninguppgift 2\processed_data_befolkningsförändringar.xlsx")
+df_filtered = pd.read_excel(r"C:\Users\johan\Documents\newproject\Individuell-Inlämninguppgift-2\processed_data_befolkningsförändringar.xlsx")
 
 #Visualiserar data om "folkökning" med ett histogram.
 plt.figure(figsize=(8, 6))
