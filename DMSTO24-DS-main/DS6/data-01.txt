@@ -1,2 +1,0 @@
-Name, Age, City
-Anna, 25, Stockholm

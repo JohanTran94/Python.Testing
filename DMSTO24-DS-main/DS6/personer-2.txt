@@ -1,2 +1,0 @@
-Name, Age, City
-Maria, 27, Stockholm
